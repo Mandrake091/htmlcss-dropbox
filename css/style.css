@@ -11,11 +11,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
-     min-width: 1200px;
+     min-width: 938px;
      /* font whitney  helvetica hue*/
      color: #23272a;
      font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
      font-size: 20px;
+}
+section div img{
+    width:100%;
 }
 .clearfix:after{
     content: '';
@@ -26,6 +29,9 @@ body{
 main{
     width: 100%;
     margin-top:150px;
+}
+header{
+    width: 100%;
 }
 
 .debug{
@@ -101,6 +107,7 @@ nav .logo{
     width: 20%;
 }
 nav{
+    min-width: 980px;
     background-color: white;
     width: 100%;
     position: fixed;
@@ -158,6 +165,24 @@ h1{
 section .container-width{
     width: 100%;
 }
+.container-section{
+    width: 40%;
+}
+.container-square{
+    width: 100%;
+
+    
+}
+.square img{
+    vertical-align: middle;
+    width: 100%;
+}
+.square{
+    width: 100px;
+    height: 100px;
+}
+
+
 .row{
     padding-top: 50px;
     width: 100%;
@@ -165,6 +190,11 @@ section .container-width{
 .column{
     width:30%
 }   
+.column3{
+    width: 300px;
+    height: 300px;
+
+}
 .left-column{
     width: 33%;
 }
@@ -177,14 +207,23 @@ section .container-width{
     font-size: 15px;
 }
 
+div .partner-image{
+    width: 50%;
+}
+div h2 {
+    width: 40%;
+}
+
 .right-column{
     margin-top:50px;
     width: 60%;
 }
 
-div svg{
-    color:#f6f6f6;
-}
+
+
+
+
+
 
 
 .left{
