@@ -24,28 +24,23 @@ body{
 }
 
 main{
-    margin-top:150px
+    width: 100%;
+    margin-top:150px;
 }
+
 .debug{
    border: 1px solid black;
 }
 .btn {
     display: inline-block;
-    border-radius: 40px;
+    border-radius: 2px;
     padding: 16px 32px;
     background-color: #8ea1e1;
     color: #fff;
     text-decoration: none;
+    font-size: 15px;
 }
 
-.container {
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-
-  }
-  
   .Check{
     color: blue;
     line-height: 30px;
@@ -62,6 +57,9 @@ main{
 section ul li{
     display: inline;
     list-style: none;
+}
+div ul li{
+    display: block;
 }
   
   
@@ -157,14 +155,22 @@ h1{
     width: 700px;
 
 }
-
-.row{
-    
-   
+section .container-width{
+    width: 100%;
 }
-
+.row{
+    padding-top: 50px;
+    width: 100%;
+}
+.column{
+    width:30%
+}   
 .left-column{
-    width: 35%;
+    width: 33%;
+}
+.column-central{
+    width: 30%;
+    margin:0 5%;   
 }
 .left-column p{
     margin-top: 30px;
