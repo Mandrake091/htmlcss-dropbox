@@ -33,7 +33,7 @@ div img{
 div .right-column img{
     width: 100%;
     min-width: 600px;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 /* header */
@@ -43,8 +43,18 @@ header{
     line-height: 60px;
     background-color: #b4d0e7;
 }
+
+main section:nth-child(3){
+    margin-top: 100px;
+    margin-bottom:100px;  
+}
+main section:nth-child(4){
+    
+}
+
 section article{
     height: 250px;
+    width: 200px;
 }
 
 #jumbotron{
@@ -110,7 +120,7 @@ nav li a:active{
 /* main */
 main{
     width: 100%;
-    padding-top:200px;
+    padding-top:150px;
 }
 .container-width{
     width: 80%;
@@ -123,7 +133,11 @@ main{
 /* /Main */
 
 /* Buttons */
+div .column .btn{
+  width: 100%;
+}
 .btn {
+    text-align: center;
     display: inline-block;
     border-radius: 2px;
     background-color:#0061ff;
@@ -158,14 +172,32 @@ main{
     font-size:40px;
     font-weight: 600;
 }
+.fa-check{
+    color: blue;
+}
 .fa-pencil,
 .fa-user,
-.fa-folder-open{
-    font-size: 15px;
-  
+.fa-folder-open,
+.fa-check{
+    font-size: 16px;
+}
+main article{
+    position: relative;
 }
 .inside{
-    padding:30px;
+    padding:30px 30px 0 30px;
+}
+article div a{
+    padding:50px;
+    position:absolute;
+    bottom:50%;
+    left:75%;
+    
+}
+article div p{
+    
+    font-size: 15px;
+    padding-bottom: 30px;
 }
 
 
@@ -192,42 +224,69 @@ h1{
 div h2{
     padding-bottom:15px;
     font-weight: 800;
+    font-size: 22px;
+}
+section div p{
+    font-size: 16px;
+    padding-bottom: 30px;
 }
 
-div .column p{
+
+div .column-central,.column p{
     font-weight: 500;
     font-size: 14px;
+}
+hr{
+    margin-bottom: 40px;
+    width: 20%;
+}
+div .column p:nth-child(6){
+    margin: 40px 0px;
     
 }
 div p span{
     font-size: 14px;
     color:black;
-    font-weight: bold;
-    
-}
-div span{
-    font-size: 13px;
-    display: block;
- 
-    color:darkgrey;
+    font-weight: bold;  
 }
 
+div span{
+    padding-top: 10px;
+    font-size: 13px;
+    display: block;
+    color:darkgrey;
+}
+div p span{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    text-decoration: underline;
+}
 .title-plan{
     padding: 10px;
     font-weight: 500;
     text-align: center;
     border-bottom: 1px solid black;
 }
-div .column ul{
+div .column-central,.column ul{
     padding-bottom: 40px;
 }
-div .column ul li{
+div .column-central,.column ul li{
     font-size: 15px;
     padding-top: 20px;
 }
-
+div .column-central,.column ul li p{
+    display: block;
+}
+section h2{
+    padding-bottom: 25px;
+}
 /* / Text Style */
-
+.spacing{
+    min-height: 550px;
+    padding-top: 50px;
+    width: 100%;
+}
 
 /* Dropdown */
 .dropdown-content {
@@ -263,9 +322,11 @@ div .column ul li{
 
 
 .container-section{
+    padding: 50px 0 0 50px;
     width: 40%;
 }
 .container-square{
+   
     min-width: 1200px;
     background-color: #dcdcdc;
     width: 100%;
@@ -302,26 +363,27 @@ div .left{
 }
 
 .column3{
-  
     width: 34%;
 }
 .row{
-    min-height: 900px;
+    min-height: 950px;
     padding-top: 50px;
     width: 100%;
 }
-
+.column-central{
+    width:33.3333333;
+}
 .column{
-    width:30%
+    width: 30%;
+}
+main section div .column:nth-child(2){
+    margin: 0 5%;
 }
 
 .left-column{
     width: 30%;
 }
-.column-central{
-    width: 30%;
-    margin:0 5%;
-}
+
 .left-column p{
     font-size: 15px;
 }
