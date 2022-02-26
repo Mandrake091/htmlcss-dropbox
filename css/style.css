@@ -183,6 +183,7 @@ div .column .btn{
     border: 3px solid #2d46aa;
 }
 .fa-arrow-down{
+    padding-top:40px;
     color: black;
     font-size:40px;
     font-weight: 600;
@@ -197,7 +198,7 @@ footer .fa-caret-up{
     font-weight:600;
     color: grey;
 }
-.fa-solid{
+.fa-arrow{
     color: rgb(0, 0, 0);
     font-size:40px;
     font-weight: 600;
@@ -211,7 +212,15 @@ footer .fa-caret-up{
 .fa-check{
     font-size: 16px;
 }
-main article{
+.fa-chevron-down:hover .dropdown-content{
+    font-weight: 700;
+    padding-top: 50px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+
+}
+main article:nth-child(2){
     top:50px;
     position: relative;
 }
@@ -263,9 +272,13 @@ div h2{
     font-weight: 800;
     font-size: 22px;
 }
-section div p{
+section div .dropbtn{
+    border-bottom: 1px solid #ededed;
     font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+}
+section div p{
+    font-size: 14px;
 }
 
 main section article{
@@ -290,6 +303,7 @@ div .column-central,.column p:nth-child(2){
     font-size: 14px;
 }
 hr{
+    margin-top: 30px;
     margin-bottom: 45px;
     width: 20%;
 }
@@ -311,7 +325,6 @@ p a{
 div span{
     padding-bottom: 15px;
     font-size: 13px;
-    display: block;
     color:rgb(99, 99, 99);
 }
 div p span{
@@ -353,26 +366,39 @@ section h2:last-child{
 }
 
 main section:last-child{
+    padding-bottom: 100px;
     padding-top: 80px;
    
 }
+section>h3:first-child{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eeeeef;
+}
 /* Dropdown */
 .dropdown-content {
-    top: 40px;
+   
+    width: 75%;
+    top: 75px;
     display: none;
     position: absolute;
     color: black;
     background-color:#ffffff;
     border-radius: 5px;
-    
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     z-index: 1;
   }
+ 
 .dropdown {
+    font-weight: 700;
+    padding-top: 50px;
+    width: 100%;
     position: relative;
     display: inline-block;
   }
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content{
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 400;
     display: block;
   }
 
@@ -392,7 +418,6 @@ main section:last-child{
     width: 40%;
 }
 .container-square{
-    
     background-color: #f5f5f5;
     width: 100%;
 }
@@ -500,33 +525,34 @@ div .partner-image{
 /* Footer  */
 
 footer{
-    margin: 0 auto;
     background-color: #000000;
     color:white;
 }
 footer aside{
-    padding:50px;
+    padding:50px 50px 0 50px;
     width: 100%;
     margin: 0 auto;
 }
-footer ul{
+footer aside ul{
+    width: 20%;
     padding: 50px;
     list-style: none;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
 }
-footer li{
-    padding: 5px 0px;
+footer aside li{
+  
+    padding: 3px 0px;
 }
 footer li:first-child{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
 }
 footer ul:first-child li:last-child{
-    padding-bottom: 150px;
+    padding-bottom: 60px;
     border-bottom: 1px  solid #e6e9ec;
 }
-footer li a{
+footer aside li a{
     text-decoration: none;
     list-style: none;
     color: white;
@@ -534,9 +560,8 @@ footer li a{
 
 /* Dopdown language */
 .nav-wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 300px;
+    padding:0 0 25px 100px;
+ 
   }
 .sl-nav {
     display: inline;
