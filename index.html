@@ -10,6 +10,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
       <title>Dropbox Replica</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
    </head>
    <body>
       <!-- intestazione -->
@@ -259,7 +260,7 @@
                <a class="btn right" href="">Contatta l'ufficio vendite</a>
             </div>
          </article>
-         <section class="container-width clearfix debug">
+         <section class="container-width clearfix">
             <div>
                <img class="partner-image left" src="./img/partner.png" alt="">
                <div class="container-section left">
@@ -269,7 +270,7 @@
                   <p>
                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nisi in asperiores vitae inventore, voluptatibus eligendi ratione sunt sit ipsa, quisquam, dolorum molestias.
                   </p>
-                  <a href="#" class="btn">Trova un partner</a>
+                  <a href="#" id="btn-white" class=" btn">Trova un partner</a>
                </div>
             </div>
          </section>
@@ -488,29 +489,17 @@
                <li><a href="">Piani</a></li>
             </ul>
          </aside>
-         <div class="nav-wrapper">
-            <div class="sl-nav">
-               <i class="fa-solid fa-earth-americas"></i>
-               <ul>
-                  <li>
-                     <b>Italiano </b><i class="fa-solid fa-caret-up"></i></i>
-                     <ul>
-                        <li>
-                           <i class="sl-flag flag-de">
-                              <div id="germany"></div>
-                           </i>
-                           <span class="active">Deutsch</span>
-                        </li>
-                        <li>
-                           <i class="sl-flag flag-usa">
-                              <div id="germany"></div>
-                           </i>
-                           <span>English</span>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
-            </div>
+         <div class="custom-select">
+            <i class="fa-solid fa-earth-americas"></i>
+            <select>
+              <option value="0">Italiano</option>
+              <option value="1">Inglese</option>
+              <option value="2">Tedesco</option>
+              <option value="3">Francese</option>
+              <option value="4">Spagnolo</option>
+              <option value="5">Siciliano</option>
+              <option value="6">Russo</option>
+            </select>
          </div>
       </footer>
       <!-- / footer -->

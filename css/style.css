@@ -194,10 +194,30 @@ main>div a{
 /* /Main */
 
 /* Buttons */
+#btn-white{
+    text-align: center;
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid black;
+    margin-top: 30px;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    line-height: 15px;
+    background-color: white;
+}
+#btn-white:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+a:hover{
+    color: red;
+}
+
 div .column .btn{
   width: 100%;
 }
-.btn {
+.btn{
     text-align: center;
     display: inline-block;
     border-radius: 2px;
@@ -207,6 +227,9 @@ div .column .btn{
     padding: 10px 20px;
     font-size: 15px;
     line-height: 15px;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .Check{
@@ -610,86 +633,17 @@ footer aside li a{
 }
 
 /* Dopdown language */
-.nav-wrapper {
-    padding:0 0 25px 100px;
- 
-  }
-.sl-nav {
-    display: inline;
-  }
-.sl-nav ul {
-    margin:0;
-    padding:0;
-    list-style: none;
-    position: relative;
-    display: inline-block;
-  }
-  .sl-nav li {
-    color:dimgray;
-    cursor: pointer;
-    padding-bottom:10px;
-  }
-  .sl-nav li b {
-    font-size: 16px;
-  }
+.custom-select{
+    background-color: #000000;
+    padding: 30px 0 30px 100px;
+}
+.custom-select select{
+    background-color: #000000;
+    color:darkgrey;
+    border: none;
+}
 
-  .sl-nav li ul {
-    display: none;
-  }
-  .sl-nav li:hover ul {
-    position: absolute;
-    bottom:45px;
-    right:-15px;
-    display: block;
-    background: #fff;
-    width: 120px;
-    padding-top: 0px;
-    z-index: 1;
-    border-radius:5px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  }
- 
 
-  .sl-nav li ul li {
-    position: relative;
-    text-align: left;
-    background: transparent;
-    padding: 15px 15px;
-    padding-bottom:0;
-    z-index: 2;
-    font-size: 15px;
-    color: #3c3c3c;
-  }
-  .sl-nav li ul li:last-of-type {
-    padding-bottom: 15px;
-  }
-  .sl-nav li ul li span {
-    padding-left: 5px;
-  }
-  .sl-nav li ul li span:hover, .sl-nav li ul li span.active {
-    color: #000000;
-  }
-  .sl-flag {
-    display: inline-block;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
-    width: 15px;
-    height: 15px;
-    background: #aaa;
-    border-radius: 50%;
-    position: relative;
-    top: 2px;
-    overflow: hidden;
-  }
-  .flag-de {
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAAPUlEQVQ4T+3HMQ0AIBTE0NOHM8x9B7hgh71bIWGieUvze1m7kHGBr/AVvsJX+EpmP5dV5/gKX+ErfIUvVDYcX2NMxQC8PAAAAABJRU5ErkJggg==');
-    background-size: cover;
-    background-position: center center;
-  }
-  .flag-usa {
-    background-size: cover;
-    background-position: center center;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAABhUlEQVQ4T2Ows82PjGixsc4LD2tysC/09Kjw8622tyuICG8u0w/cpGSCBzF4e1VmZkzw9anOzOj38a4KCW4IC22ECHYk1l9tn4gHMeTlTnZxLikvm+XiUpKW2hvgX+vnV5OVOQEoOGfOtv94AYOzU3Fd7XxHh6Lq6rlurqUx0W0J8Z1AnbW18yotonaYuOJBDBXls4A+bGpaBCTz86YEBtQCvVBSPAPIbY0oP1/aiAcxABU1Ny+2tclvbFjo5FgUF9uenNwNDLnmpkWEnV1TPRcY1O1tS4H6i4umA/0MDK2K8tlAwRqHpP1uoXgQKKraWpcClTY3LQZaCLQ5NaUX5OaWJY3++SeTC/AgBmA4AXUClUJs9ver8fKsAAYEUJCws4G21dXNB1oFdD/Qz8DQTk4C+bm2dn6DZ9bRiDQ8iAEYt8CoBpK5YBIYw0AEEZwSXX4oMB4PYoC6gCzAcDqrjGzEsMfen2xEmbMv1rSTjRi26dqRjShz9o2+6WQjBrSShQSkZAIADvW/HLrLY6cAAAAASUVORK5CYII=');
-  }
 
 
 
