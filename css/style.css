@@ -41,6 +41,7 @@ header{
     height: 700px;
     width: 100%;
     line-height: 60px;
+    box-shadow:1px 1px 10px #888888;
     background-color: #b4d0e7;
 }
 
@@ -109,10 +110,6 @@ header p {
 .nav-drop:hover + .drop-ul, .drop-ul:hover{
     display: block;
 }
-
-
-
-
 
 nav .logo img{
     width: 100px;
@@ -233,7 +230,6 @@ div .column .btn{
 }
 
 .Check{
-    
     color: blue;
     line-height: 15px;
     width: 15px;
@@ -333,6 +329,7 @@ div ul li{
 }
 /* Box di sfondo */
 .box{
+    box-shadow:1px 1px 10px #888888;
     background-color: #b4d0e7;
 }
 
@@ -599,6 +596,7 @@ div .partner-image{
 /* Footer  */
 
 footer{
+    box-shadow:1px 1px 10px #888888;
     background-color: #000000;
     color:white;
 }
