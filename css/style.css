@@ -16,7 +16,7 @@ html{
 body{    
     font-family: 'Open Sans', sans-serif;    
     scroll-behavior: smooth;
-    min-width: 1150px;
+    min-width: 1200px;
     color: #23272a;
     font-size: 20px;
 }
@@ -235,7 +235,6 @@ div .column .btn{
     width: 15px;
     display: inline-block;
     height: 15px;
-   
     border-radius: 50%;
     margin-right: 5px;
     border:3px solid #2d46aa;  
@@ -272,6 +271,7 @@ footer .fa-caret-up{
 .fa-user,
 .fa-folder-open,
 .fa-check{
+    margin-left: -20px;
     font-size: 16px;
 }
 .fa-chevron-down:hover .dropdown-content{
@@ -414,6 +414,7 @@ div .column-central,.column ul{
     padding-bottom: 40px;
 }
 div .column-central,.column ul li{
+    padding-left:20px;
     font-size: 15px;
     padding-top: 20px;
 }
