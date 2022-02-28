@@ -10,12 +10,12 @@
     display: table;
     clear: both;
 }
-html{
-   
+html{ 
+    scroll-behavior: smooth;
 }
 body{    
     font-family: 'Open Sans', sans-serif;    
-    scroll-behavior: smooth;
+   
     min-width: 1200px;
     color: #23272a;
     font-size: 20px;
