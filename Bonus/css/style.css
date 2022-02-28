@@ -73,7 +73,7 @@ main section:nth-child(2){
     position: absolute;
     bottom:-2px;
     transform: translateY(101%);
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(0, 0, 0, 0.597);
     width: 150px;
 }
 .drop-li{
@@ -85,13 +85,13 @@ main section:nth-child(2){
 }
 .drop-li a{
     text-decoration: none;
-    color:rgb(255, 0, 0);
+    color:rgb(255, 255, 255);
     font-weight: 600;
 }
 .drop-li:hover{
     border-radius: 5px;
-    color: #0061FF;
-    background-color: white;
+    color: white;
+    background-color: rgb(197, 197, 197);
 }
 .nav-drop:hover + .drop-ul, .drop-ul:hover{
     display: block;
@@ -134,11 +134,7 @@ nav li{
     list-style-type: none;
 }
 
-nav li a:hover{
-    
-    border-bottom:2px solid #0061ff;
-    color:#ff0000;
-}
+
 nav li a:active{
     background-color: #54bbff38;
 }
@@ -191,15 +187,33 @@ main section div ul li {
     font-size: 0.7em; 
 }
 main section div ul li a{
-    
     color:#595959;
     text-decoration: none;
     list-style-type: none;
     list-style: none;
 }
-a:hover{
+/* Hovers */
+main header nav ul a:hover{
+    border-bottom:2px solid #0061FF ;
     color: #0061FF;
 }
+div a:hover{
+    font-weight: 600;
+}
+footer aside ul li a:hover{
+    font-weight: 600;
+}
+
+main div span a:hover {
+    text-decoration: none;
+}
+div p>a:hover{
+    text-decoration: none;
+}
+main #inizia:hover{
+    background-color: rgba(114, 114, 114, 0.5); 
+}
+/* / Hovers */
 
 /* divisione in colonne section 3*/
 
@@ -234,20 +248,28 @@ main section div span a:nth-child(1){
 /* Pre footer */
 
 main article h2{
+    color: #ffcb95;
     font-weight: 700;
     padding: 100px;
     font-size: 2em;
 }
 main article p{
-    
+    padding-top: 20px;
+    color: white;
 }
+main article a{
+    color: white;
+}
+
 .sx-column{
     width: 70%;
+}
 
+.dx-column{
+    padding-top: 120px;
+    width: 30%;
 }
 .box{
-    position: relative;
-    color: #ffcb95;
     margin-top: 150px;
     box-shadow:1px 1px 10px #888888;
     background-color: #0d2481;
@@ -255,7 +277,6 @@ main article p{
 
 .btn{
     top: 120px;
-    position: absolute;
     text-align: center;
     display: inline-block;
     border-radius: 2px;
@@ -266,8 +287,131 @@ main article p{
     font-size: 15px;
     line-height: 15px;
 }
-.btn:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+.btn-white{
+    padding: 15px 40px;
+    background-color: white;
+    color: #23272a;
+}
+.btn-white:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+/* Footer */
+footer{
+    box-shadow:1px 1px 10px #000000;
+    background-color: #000000;
+    color:white;
+}
+footer aside{
+    padding:50px 50px 0 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+footer aside ul{
+    width: 20%;
+    padding: 50px;
+    list-style: none;
+    color: white;
+    font-size: 12px;
+}
+footer aside li{
+  
+    padding: 3px 0px;
+}
+footer li:first-child{
+    font-weight: 700;
+    font-size: 20px;
+}
+footer ul:first-child li:last-child{
+    padding-bottom: 60px;
+    border-bottom: 1px  solid #e6e9ec;
+}
+footer aside li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+/* Dopdown language */
+.custom-select{
+    
+    background-color: #000000;
+    padding: 30px 0 30px 100px;
+}
+.custom-select select{
+    cursor: pointer;
+    background-color: #000000;
+    color:darkgrey;
+    border: none;
+}
+/* Chat box */
+.fa-comments{
+    position: absolute;
+    left:10px;
+    top:7.5px;
+    font-size: 25px;
+
+}
+.fa-minus{
+    position: absolute;
+    top:7.5px;
+    right: 40px;
+    font-size: 25px;
+}
+.fa-xmark{
+    position: absolute;
+    top:7.5px;
+    right: 15px;
+    font-size: 25px;
+}  
+.chatbox{
+    position:fixed;
+    width:350px;
+    height: 500px;
+    bottom:15px;
+    right: 15px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow:1px 1px 10px #888888;
+}
+.fa-comments,.fa-minus,.fa-xmark{
+    color: white;
+}
+
+.chat-bar{
+    font-size: 0.8em;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color:white;
+    margin-bottom: 30px;
+    height: 40px;
+    background-color: #0d2481;
+}
+.chat-text{
+    margin-top: 25px;
+    padding: 30px;
+    width: 100%;
+}
+input{
+    font-size: 1em;
+}
+label{
+    ;
+    font-size: 0.7em;
+}
+textarea{
+    font-size: 1em;
+    border-radius: 5px;
+    resize: none;
+}
+button{
+    margin-left: 180px;
+    padding:12px;
+    border-radius: 10px;
+    background-color:#0d2481;
     color: white;
 }
 
