@@ -85,27 +85,27 @@ header p {
     border-radius: 5px;
     display: none;
     position: absolute;
-    bottom:-2px;
+    bottom:0;
     transform: translateY(101%);
     background-color:rgba(255, 255, 255, 0.8);
-    width: 150px;
+    width: 200px;
 }
 .drop-li{
     text-align: center;
-    margin-top: 15px;
+    margin:15px 30px;
     display:block;
     line-height: 1.5;
-    padding: 5px;
+    padding: 10px 0;
 }
 .drop-li a{
+    padding:10px 30px;
     text-decoration: none;
-    color:rgb(255, 0, 0);
+    color:rgb(0, 0, 0);
     font-weight: 600;
 }
 .drop-li:hover{
     border-radius: 5px;
-    color: #0061FF;
-    background-color: white;
+    background-color: rgba(118, 118, 118, 0.727);
 }
 .nav-drop:hover + .drop-ul, .drop-ul:hover{
     display: block;
@@ -132,7 +132,8 @@ nav ul li{
 
 }
 nav li a{
-    padding:19px 0;
+    padding: 19px 0;
+    vertical-align: middle;
     text-decoration: none;
     color: black;
 }
@@ -148,9 +149,8 @@ nav li{
     list-style-type: none;
 }
 
-nav li a:hover{
-    
-    border-bottom:2px solid #0061ff;
+nav>ul>li>a:nth-child(1):hover{
+    border-bottom:1px solid #0061ff;
     color:#ff0000;
 }
 nav li a:active{

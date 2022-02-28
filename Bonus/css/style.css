@@ -71,7 +71,7 @@ main section:nth-child(2){
     border-radius: 5px;
     display: none;
     position: absolute;
-    bottom:-2px;
+    bottom:0;
     transform: translateY(101%);
     background-color:rgba(0, 0, 0, 0.597);
     width: 150px;
@@ -135,9 +135,7 @@ nav li{
 }
 
 
-nav li a:active{
-    background-color: #54bbff38;
-}
+
 
 /* / NavBar */
 
@@ -193,10 +191,14 @@ main section div ul li a{
     list-style: none;
 }
 /* Hovers */
-main header nav ul a:hover{
-    border-bottom:2px solid #0061FF ;
-    color: #0061FF;
+nav li a:active{
+    background-color: #54bbff38;
 }
+nav>ul>li>a:nth-child(1):hover{
+    border-bottom:1px solid #0061ff;
+    color:#ff0000;
+}
+
 div a:hover{
     font-weight: 600;
 }
@@ -399,7 +401,6 @@ input{
     font-size: 1em;
 }
 label{
-    ;
     font-size: 0.7em;
 }
 textarea{
